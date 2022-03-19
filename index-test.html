@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="UTF-16">
+
+    <!-- Aqui va el titulo del documento HTML -->
+    <title>Curso de html</title>
+
+  </head>
+  <body>
+  <script>
+    var url = window.location;
+    document.write(url)
+  </script>
+    <br>
+    <h1>
+      Aqui va el primer encabezado de pagina
+    </h1>
+    <p>
+      مرحبا بكم في موقع جريدة الصحف العربية ال <br>يومية باللغة العربية  هنا سوف تجد الصحف الأكثر شهرة والأكبر في العالم العربي
+    </p>
+    <p>
+      Me gustaria entender como funciona el sistema de parrafos de HTML.
+      <br>
+      Ahora lo que hago es continuar aqui. Párrafo, estación, ñoño.
+      <br>
+      Y tambien aqui sin ningun tipo de problema.
+      <br>
+      Pero si introduzco 2 etiquetas break pasará esto:
+      <br>
+      <br>
+      Aqui ya empiezo otro parrafo
+    </p>
+    <p>
+      Lo mismo si empiezo otro parrafo aqui con la etiqueta "p".
+    </p>
+
+    <pre>
+    Esta etiqueta
+    me permite escribir
+    justamente con los
+    espacios y caracteres
+    que yo quiero
+    sin introducir ninguna
+    etiqueta.
+    </pre>
+
+    <pre>
+    Este texto es preformateado con la etiqueta "prev"
+    ---------------------------------------------
+                   lluvia | Sol | Nieve | Nubes |
+    ---------------------------------------------
+    Ventajas          si     si     si     si
+    ---------------------------------------------
+    Invonvenientes    no     no     no     no
+    ---------------------------------------------
+    </pre>
+
+    <blockquote>
+      Amar sin ser amado es como<br>
+      limpiarse el culo sin haber cagado<br>
+                      <h4>
+                        Anonimo
+      </h3>
+    </blockquote>
+
+    <address>
+      Para cualquier tipo de duda contactar con <a href="https://developer.mozilla.org">Khosé</a>
+    </address>
+    <br>
+
+    <b>Así se escribe en negrita o bold</b>
+    <br>
+    <i>Y así se escribe en cursiva o italica</i>
+    <p>
+      Aunque se puede incluir en los <b>PARRAFOS</b><br>
+      como puedes ver tambien en <i>ITALICA</i>
+      <br>
+      <b><i>Y así puedes convinar las 2</i></b>
+    </p>
+    <p>
+      <b><i>Pero si lo haces en otro parrafo se escribe mejor</i></b>
+    </p>
+    <p>
+      <tt><b><i>Hay otra forma estilo texto de maquina de escribir</i></b></tt>
+    </p>
+    <p>
+      <center>Aqui se ve el texto centrado<br>aunque puede ser<br>cualquier cosa.</center>
+    </p>
+    <ul>
+      <li>Lista</li>
+      <li>Desordenada</li>
+      <li>De</li>
+      <li>Ideas</li>
+    </ul>
+    <!-- Con esto se separa con una linea horizontal los textos -->
+    <hr>
+    <ol>
+      <li>Lista</li>
+      <li>Ordenada</li>
+      <li>De</li>
+      <li>Ideas</li>
+    </ol>
+
+    <a href="https://google.com">
+       <p>
+      Vamos a poner que aqui va un tipo cualquiera detexto para usar el redireccionamiento
+       </p>
+    </a>
+    <center><h1>
+      <a href="https://www.google.com/">GOOGLE Aquí</a>
+    </h1></center>
+
+    <p>
+      Aqui podemos escribir asi las entindades: &#1590; &lt; &quot; &gt; &ntilde; &Ntilde;
+    </p>
+
+    <center><table border=3 cellspacing=5 cellpadding=2 width=80%>
+      <TH align=center>Buscadores
+      <TH align=center colspan=2> Otros links
+        <TR>
+        <TD align=left>Izquierda
+        <td align=right>Derecha
+          <td align=center>Centrado
+            <td align=center> Uno
+            <td align=center> 2
+        <TR>
+    </table></center>
+    <hr>
+
+    <form action="mailto:jimyihendrix@gmail.com" method="POST">
+      Tu nombre:<input type = text name = nombre size=30>
+      <br>
+      Tu clave:<input type=password name=clave size=8>
+      <p>
+        Archivos a enviar:
+        <input type=checkbox name=archivo value="Nanual">Manual HTML
+        <input type=checkbox name=archivo value="Mapthis">Programa Mapthis
+        <input type=checkbox name=archivo value="Help">Archivo de ayuda
+      </p>
+
+      <p>
+        Tu edad:
+        <br>
+        <input type=radio name=edad value="-20">Menos de 20 años
+        <br>
+        <input type=radio name=edad value="20-40">Entre 20 y 40 años
+        <br>
+        <input type=radio name=edad value="+40">Más de 40 años
+      </p>
+
+      <p>
+        <input type=hidden name=lugar value="pagina personal">
+        Como encontraste mi pagina
+        <select name=donde>
+          <option>De casualidad
+          <option>Por Google
+          <option>Por Yahoo
+          <option>En un pesebre
+        </select>
+      </p>
+
+      <p>
+        Tus comentarios:
+        <br>
+        <textarea name=comentario rows=5 cols=40 wrap=virtual></textarea>
+      </p>
+
+      <input type=submit value="Enviar">
+      <input type=reset value="borrar">
+    </form>
+    <hr>
+    <form>
+      <select name="list">
+        <option selected value="http://web.ucol.mx/usuario2">Web del profe
+        <option value="https://www.google.com">Google
+        <option value="https://www.ibm.com">IBM
+        <option value="https://wwww.amazon.com">Amazon
+
+      </select>
+      <input type=button value="Ir a..." onClick="top.location.href=this.form.list.options[this.form.list.selectedIndex].value">
+
+    </form>
+
+          <u><tt>Tele Type de prueba</tt></u>
+          <br>
+    <p>
+      <s>Este texto está subrallado</s>
+
+    </p>
+
+    <blink>Este texto parpadea</blink>
+
+    <p>
+      Log<sub>n</sub>=x<sup>n</sup>
+          </p>
+
+    <font size=+2 color="FF22DD">
+      HOla peña
+    </font>
+    <i>Esto es lo mismo que</i>
+          <br>
+          <cite>Esto</cite>
+    <br>
+    <s>Esto es lo mismo tambien que</s>
+    <br>
+    <strike>ESTO</strike>
+    <br>
+    <MARQUEE direction=right bgcolor = "#FFFFFF" width = 50% scrolldelay = 0.005 >
+Bienvenido a mi pagina personal en Internet.
+</MARQUEE>
+
+  <embed src="https://www.youtube.com/watch?v=Rp9e1Y-vdBM&ab_channel=Jombo" width=200 height=200>
+
+
+  </body>
+</html>
